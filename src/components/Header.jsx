@@ -144,7 +144,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { Navigate, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -163,7 +163,7 @@ export default function Header() {
           src={LOGO}
           alt="Logo"
           className="h-16 cursor-pointer"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (Navigate({ to: "/" }), window.scrollTo({ top: 0, behavior: "smooth" }))}
         />
 
         {/* Desktop Menu */}

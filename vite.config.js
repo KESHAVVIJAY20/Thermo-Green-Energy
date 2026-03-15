@@ -11,5 +11,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  // base: "/Thermo-Green-Energy/",
+  base: "/Thermo-Green-Energy/",
 });
